@@ -39,4 +39,8 @@ Windows 便携目录在 PATH 只包含 Windows 系统目录时成功启动和截
 
 没有在真实 GNOME/KDE 用户会话验证缩放、输入法、portal、剪贴板及 GPU 编码/滤镜；双后端渲染采用软件合成。Windows 创建/访问时间保留、所有编码器和全部滤镜组合未逐项实测。Linux 修改文件创建时间会明确拒绝；修改/访问时间使用 Qt 文件 API。
 
-原版 .NET 插件、Agent、LibreHardwareMonitor、更新器、NV_FRUC/VapourSynth 管线及部分复杂流处理尚未移植，详见 README；本版不宣称与上游全部功能等价。GitHub CI 配置已提供，本地验证不等于 GitHub Actions 已执行成功。编译使用隔离的临时 Debian 环境；未将源码部署到现有 VPS 服务。
+原版 .NET 插件、Agent、LibreHardwareMonitor、更新器、NV_FRUC/VapourSynth 管线及部分复杂流处理尚未移植，详见 README；本版不宣称与上游全部功能等价。编译使用隔离的临时 Debian 环境；未将源码部署到现有 VPS 服务。
+
+## GitHub CI
+
+代码提交 `08daca7b12b6a784387a5ac4b0e7aa02d8cd6ac4` 的 [Native C++ build](https://github.com/zybin7890/FFmpegFreeUI/actions/runs/37497388883) 已实际执行成功：Ubuntu 24.04 上的核心测试、Wayland/X11 渲染和 DEB 打包通过，Fedora 43 上的编译与 RPM 打包通过。运行附有 `linux-deb` 和 `linux-rpm-fedora` 构建产物；CI 的 Ubuntu 包与本地 Debian 12 包有不同的系统库最低版本，安装时以包声明的依赖为准。本次后续提交仅更新此验证文档，应用代码不变。
