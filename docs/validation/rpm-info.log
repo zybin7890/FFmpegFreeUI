@@ -1,0 +1,21 @@
+Name        : ffmpegfreeui-native
+Version     : 0.1.0
+Release     : 1
+Architecture: x86_64
+Install Date: (not installed)
+Group       : Applications/Multimedia
+Size        : 559557
+License     : AGPL-3.0-only AND MIT
+Signature   : (none)
+Source RPM  : ffmpegfreeui-native-0.1.0-1.src.rpm
+Build Date  : Tue Oct  6 16:35:34 2026
+Build Host  : fui-build
+Relocations : /usr
+Vendor      : FFmpegFreeUI Native contributors
+URL         : https://github.com/Lake1059/FFmpegFreeUI
+Summary     : Native C++ FFmpeg frontend with Wayland and X11 support
+Description :
+DESCRIPTION
+===========
+
+This is an installer created using CPack (https://cmake.org). No additional installation instructions provided.

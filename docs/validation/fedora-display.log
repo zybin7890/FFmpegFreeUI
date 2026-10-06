@@ -1,0 +1,2 @@
+PASS wayland {'fields': 186, 'height': 820, 'imageSaved': True, 'platform': 'wayland', 'visible': True, 'width': 1280}
+PASS x11 {'fields': 186, 'height': 820, 'imageSaved': True, 'platform': 'xcb', 'visible': True, 'width': 1280}

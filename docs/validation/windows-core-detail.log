@@ -1,0 +1,19 @@
+Start testing: Oct 07 00:30 马来西亚半岛标准时间
+----------------------------------------------------------
+1/1 Testing: native_core
+1/1 Test: native_core
+Command: "D:/AI/Codex/Conversations/Codex/2026-10-05/https-github-com-lake1059-ffmpegfreeui/work/build-win-mingw13/fui_tests.exe"
+Directory: D:/AI/Codex/Conversations/Codex/2026-10-05/https-github-com-lake1059-ffmpegfreeui/work/build-win-mingw13
+"native_core" start time: Oct 07 00:30 马来西亚半岛标准时间
+Output:
+----------------------------------------------------------
+PASS 44 checks, real FFmpeg transcode, two-pass, pause/resume/cancel, preset and queue recovery
+<end of output>
+Test time =   2.48 sec
+----------------------------------------------------------
+Test Passed.
+"native_core" end time: Oct 07 00:30 马来西亚半岛标准时间
+"native_core" time elapsed: 00:00:02
+----------------------------------------------------------
+
+End testing: Oct 07 00:30 马来西亚半岛标准时间

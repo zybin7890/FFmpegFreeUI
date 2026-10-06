@@ -1,0 +1,3 @@
+#!/bin/sh
+# The executable selects native Wayland first and honors QT_QPA_PLATFORM.
+exec ffmpegfreeui "$@"

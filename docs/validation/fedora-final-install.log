@@ -1,0 +1,20 @@
+Updating and loading repositories:
+Repositories loaded.
+Package                          Arch   Version Repository        Size
+Reinstalling:
+ ffmpegfreeui-native             x86_64 0.1.0-1 @commandline 546.4 KiB
+   replacing ffmpegfreeui-native x86_64 0.1.0-1 @commandline 533.3 KiB
+
+Transaction Summary:
+ Reinstalling:       1 package
+ Replacing:          1 package
+
+Total size of inbound packages is 247 KiB. Need to download 0 B.
+After this operation, 13 KiB extra will be used (install 546 KiB, remove 533 KiB).
+Running transaction
+[1/4] Verify package files              100% | 125.0   B/s |   1.0   B |  00m00s
+[2/4] Prepare transaction               100% |   4.0   B/s |   2.0   B |  00m00s
+[3/4] Reinstalling ffmpegfreeui-native- 100% |   2.2 MiB/s | 548.5 KiB |  00m00s
+[4/4] Removing ffmpegfreeui-native-0:0. 100% |  12.0   B/s |  13.0   B |  00m01s
+Warning: skipped OpenPGP checks for 1 package from repository: @commandline
+Complete!

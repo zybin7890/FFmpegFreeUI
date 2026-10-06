@@ -1,0 +1,181 @@
+{
+  "audio.copy": {
+    "name": "复制流",
+    "codec": "copy",
+    "args": []
+  },
+  "audio.disable": {
+    "name": "禁用",
+    "codec": "-an",
+    "args": []
+  },
+  "aac.native": {
+    "name": "AAC",
+    "codec": "aac",
+    "args": []
+  },
+  "aac.nmr": {
+    "name": "NMR AAC",
+    "codec": "aac",
+    "args": [
+      "-aac_coder",
+      "nmr"
+    ]
+  },
+  "aac.fdk": {
+    "name": "FDK AAC",
+    "codec": "libfdk_aac",
+    "args": []
+  },
+  "aac.fdk.he": {
+    "name": "FDK AAC HE",
+    "codec": "libfdk_aac",
+    "args": [
+      "-profile:a",
+      "aac_he"
+    ]
+  },
+  "aac.fdk.hev2": {
+    "name": "FDK AAC HE v2",
+    "codec": "libfdk_aac",
+    "args": [
+      "-profile:a",
+      "aac_he_v2"
+    ]
+  },
+  "aac.audiotoolbox": {
+    "name": "AudioToolbox AAC",
+    "codec": "aac_at",
+    "args": []
+  },
+  "aac.mediafoundation": {
+    "name": "Media Foundation AAC",
+    "codec": "aac_mf",
+    "args": []
+  },
+  "mp3.lame": {
+    "name": "LAME MP3",
+    "codec": "libmp3lame",
+    "args": []
+  },
+  "mp3.mediafoundation": {
+    "name": "Media Foundation MP3",
+    "codec": "mp3_mf",
+    "args": []
+  },
+  "opus.libopus": {
+    "name": "Opus",
+    "codec": "libopus",
+    "args": []
+  },
+  "flac.native": {
+    "name": "FLAC",
+    "codec": "flac",
+    "args": []
+  },
+  "alac.native": {
+    "name": "ALAC",
+    "codec": "alac",
+    "args": []
+  },
+  "alac.audiotoolbox": {
+    "name": "AudioToolbox ALAC",
+    "codec": "alac_at",
+    "args": []
+  },
+  "pcm.s16le": {
+    "name": "WAV 16bit",
+    "codec": "pcm_s16le",
+    "args": []
+  },
+  "pcm.s24le": {
+    "name": "WAV 24bit",
+    "codec": "pcm_s24le",
+    "args": []
+  },
+  "pcm.s32le": {
+    "name": "WAV 32bit",
+    "codec": "pcm_s32le",
+    "args": []
+  },
+  "pcm.s64le": {
+    "name": "WAV 64bit",
+    "codec": "pcm_s64le",
+    "args": []
+  },
+  "pcm.alaw.audiotoolbox": {
+    "name": "AudioToolbox PCM A-law",
+    "codec": "pcm_alaw_at",
+    "args": []
+  },
+  "pcm.mulaw.audiotoolbox": {
+    "name": "AudioToolbox PCM mu-law",
+    "codec": "pcm_mulaw_at",
+    "args": []
+  },
+  "ac3.native": {
+    "name": "ATSC A/52A (AC3)",
+    "codec": "ac3",
+    "args": []
+  },
+  "ac3.mediafoundation": {
+    "name": "Media Foundation AC-3",
+    "codec": "ac3_mf",
+    "args": []
+  },
+  "eac3.native": {
+    "name": "ATSC A/52B (EAC3)",
+    "codec": "eac3",
+    "args": []
+  },
+  "dts.dca": {
+    "name": "DTS Coherent Acoustics",
+    "codec": "dca",
+    "args": []
+  },
+  "truehd.native": {
+    "name": "TrueHD",
+    "codec": "truehd",
+    "args": []
+  },
+  "ilbc.audiotoolbox": {
+    "name": "AudioToolbox iLBC",
+    "codec": "ilbc_at",
+    "args": []
+  },
+  "tta.native": {
+    "name": "True Audio",
+    "codec": "tta",
+    "args": []
+  },
+  "vorbis.libvorbis": {
+    "name": "Vorbis (ogg)",
+    "codec": "libvorbis",
+    "args": []
+  },
+  "ra.real144": {
+    "name": "RealAudio 1.0 (14.4K)",
+    "codec": "real_144",
+    "args": []
+  },
+  "wavpack.native": {
+    "name": "WavPack",
+    "codec": "wavpack",
+    "args": []
+  },
+  "mp2.twolame": {
+    "name": "LAME MP2",
+    "codec": "libtwolame",
+    "args": []
+  },
+  "amr.nb.opencore": {
+    "name": "AMR-NB",
+    "codec": "libopencore_amrnb",
+    "args": []
+  },
+  "amr.wb.vo": {
+    "name": "AMR-WB",
+    "codec": "libvo_amrwbenc",
+    "args": []
+  }
+}

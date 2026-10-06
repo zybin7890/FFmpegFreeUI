@@ -1,0 +1,1616 @@
+[
+  {
+    "key": "预设备注",
+    "type": "string",
+    "group": "输出与预设",
+    "default": ""
+  },
+  {
+    "key": "预设文件版本",
+    "type": "number",
+    "group": "输出与预设",
+    "default": 6.0
+  },
+  {
+    "key": "输出容器",
+    "type": "string",
+    "group": "输出与预设",
+    "default": ""
+  },
+  {
+    "key": "输出_输出文件参数使用方法",
+    "type": "enum",
+    "group": "输出",
+    "default": 0,
+    "choices": [
+      {
+        "label": "正常使用",
+        "value": 0
+      },
+      {
+        "label": "不附加",
+        "value": 1
+      },
+      {
+        "label": "声明丢弃输出",
+        "value": 2
+      }
+    ]
+  },
+  {
+    "key": "输出目录",
+    "type": "string",
+    "group": "输出与预设",
+    "default": ""
+  },
+  {
+    "key": "输出_自动命名选项",
+    "type": "enum",
+    "group": "输出",
+    "default": 1,
+    "choices": [
+      {
+        "label": "不使用自动命名",
+        "value": 0
+      },
+      {
+        "label": "附加 递增时间戳",
+        "value": 1
+      },
+      {
+        "label": "附加 递增数字",
+        "value": 2
+      },
+      {
+        "label": "附加 3FUI",
+        "value": 3
+      },
+      {
+        "label": "常规压片 附加编码器和质量参数",
+        "value": 4
+      },
+      {
+        "label": "附加 随机8位数字",
+        "value": 5
+      },
+      {
+        "label": "附加 随机8位字母",
+        "value": 6
+      },
+      {
+        "label": "附加 随机8位数字和字母组合",
+        "value": 7
+      },
+      {
+        "label": "附加 随机16位数字",
+        "value": 8
+      },
+      {
+        "label": "附加 随机16位字母",
+        "value": 9
+      },
+      {
+        "label": "附加 随机16位数字和字母组合",
+        "value": 10
+      },
+      {
+        "label": "附加 2位结尾序号",
+        "value": 11
+      },
+      {
+        "label": "附加 3位结尾序号",
+        "value": 12
+      }
+    ]
+  },
+  {
+    "key": "输出命名_开头文本",
+    "type": "string",
+    "group": "输出命名",
+    "default": ""
+  },
+  {
+    "key": "输出命名_替代文本",
+    "type": "string",
+    "group": "输出命名",
+    "default": ""
+  },
+  {
+    "key": "输出命名_结尾文本",
+    "type": "string",
+    "group": "输出命名",
+    "default": ""
+  },
+  {
+    "key": "输出命名_保留创建时间",
+    "type": "bool",
+    "group": "输出命名",
+    "default": false
+  },
+  {
+    "key": "输出命名_保留修改时间",
+    "type": "bool",
+    "group": "输出命名",
+    "default": false
+  },
+  {
+    "key": "输出命名_保留访问时间",
+    "type": "bool",
+    "group": "输出命名",
+    "default": false
+  },
+  {
+    "key": "解码参数_解码器",
+    "type": "string",
+    "group": "解码参数",
+    "default": ""
+  },
+  {
+    "key": "解码参数_CPU解码线程数",
+    "type": "string",
+    "group": "解码参数",
+    "default": ""
+  },
+  {
+    "key": "解码参数_解码数据格式",
+    "type": "string",
+    "group": "解码参数",
+    "default": ""
+  },
+  {
+    "key": "解码参数_指定硬件的参数名",
+    "type": "string",
+    "group": "解码参数",
+    "default": ""
+  },
+  {
+    "key": "解码参数_指定硬件的参数",
+    "type": "string",
+    "group": "解码参数",
+    "default": ""
+  },
+  {
+    "key": "视频参数_编码器_类型",
+    "type": "enum",
+    "group": "编码器",
+    "default": 0,
+    "choices": [
+      {
+        "label": "未选择",
+        "value": 0
+      },
+      {
+        "label": "视频",
+        "value": 1
+      },
+      {
+        "label": "图片",
+        "value": 2
+      }
+    ]
+  },
+  {
+    "key": "视频参数_编码器_分类名称",
+    "type": "string",
+    "group": "编码器",
+    "default": ""
+  },
+  {
+    "key": "视频参数_编码器_具体编码",
+    "type": "string",
+    "group": "编码器",
+    "default": ""
+  },
+  {
+    "key": "视频参数_编码器_图片编码器质量值",
+    "type": "string",
+    "group": "编码器",
+    "default": ""
+  },
+  {
+    "key": "视频参数_编码器_编码预设",
+    "type": "string",
+    "group": "编码器",
+    "default": ""
+  },
+  {
+    "key": "视频参数_编码器_配置文件",
+    "type": "string",
+    "group": "编码器",
+    "default": ""
+  },
+  {
+    "key": "视频参数_编码器_场景优化",
+    "type": "string",
+    "group": "编码器",
+    "default": ""
+  },
+  {
+    "key": "视频参数_编码器_gpu",
+    "type": "string",
+    "group": "编码器",
+    "default": ""
+  },
+  {
+    "key": "视频参数_编码器_threads",
+    "type": "string",
+    "group": "编码器",
+    "default": ""
+  },
+  {
+    "key": "视频参数_分辨率",
+    "type": "string",
+    "group": "分辨率",
+    "default": ""
+  },
+  {
+    "key": "视频参数_分辨率自动计算_宽度",
+    "type": "string",
+    "group": "分辨率自动计算",
+    "default": ""
+  },
+  {
+    "key": "视频参数_分辨率自动计算_高度",
+    "type": "string",
+    "group": "分辨率自动计算",
+    "default": ""
+  },
+  {
+    "key": "视频参数_分辨率自动计算_缩放滤镜",
+    "type": "string",
+    "group": "分辨率自动计算",
+    "default": ""
+  },
+  {
+    "key": "视频参数_分辨率自动计算_缩放算法",
+    "type": "string",
+    "group": "分辨率自动计算",
+    "default": ""
+  },
+  {
+    "key": "视频参数_分辨率_裁剪滤镜参数",
+    "type": "string",
+    "group": "分辨率",
+    "default": ""
+  },
+  {
+    "key": "视频参数_帧速率",
+    "type": "string",
+    "group": "帧速率",
+    "default": ""
+  },
+  {
+    "key": "视频参数_帧速率模式",
+    "type": "string",
+    "group": "帧速率模式",
+    "default": ""
+  },
+  {
+    "key": "视频参数_抽帧_max",
+    "type": "string",
+    "group": "抽帧",
+    "default": ""
+  },
+  {
+    "key": "视频参数_抽帧_keep",
+    "type": "string",
+    "group": "抽帧",
+    "default": ""
+  },
+  {
+    "key": "视频参数_抽帧_hi",
+    "type": "string",
+    "group": "抽帧",
+    "default": ""
+  },
+  {
+    "key": "视频参数_抽帧_lo",
+    "type": "string",
+    "group": "抽帧",
+    "default": ""
+  },
+  {
+    "key": "视频参数_抽帧_frac",
+    "type": "string",
+    "group": "抽帧",
+    "default": ""
+  },
+  {
+    "key": "视频参数_插帧_目标帧率",
+    "type": "string",
+    "group": "插帧",
+    "default": ""
+  },
+  {
+    "key": "视频参数_插帧_插帧模式",
+    "type": "string",
+    "group": "插帧",
+    "default": ""
+  },
+  {
+    "key": "视频参数_插帧_运动估计模式",
+    "type": "string",
+    "group": "插帧",
+    "default": ""
+  },
+  {
+    "key": "视频参数_插帧_运动估计算法",
+    "type": "string",
+    "group": "插帧",
+    "default": ""
+  },
+  {
+    "key": "视频参数_插帧_运动补偿模式",
+    "type": "string",
+    "group": "插帧",
+    "default": ""
+  },
+  {
+    "key": "视频参数_插帧_可变块大小的运动补偿",
+    "type": "bool",
+    "group": "插帧",
+    "default": false
+  },
+  {
+    "key": "视频参数_插帧_块大小",
+    "type": "string",
+    "group": "插帧",
+    "default": ""
+  },
+  {
+    "key": "视频参数_插帧_搜索范围",
+    "type": "string",
+    "group": "插帧",
+    "default": ""
+  },
+  {
+    "key": "视频参数_插帧_场景变化检测强度",
+    "type": "string",
+    "group": "插帧",
+    "default": ""
+  },
+  {
+    "key": "视频参数_NV_FRUC_目标帧率",
+    "type": "string",
+    "group": "NV",
+    "default": ""
+  },
+  {
+    "key": "视频参数_NV_FRUC_质量和速度",
+    "type": "string",
+    "group": "NV",
+    "default": ""
+  },
+  {
+    "key": "视频参数_NV_FRUC_网格大小",
+    "type": "string",
+    "group": "NV",
+    "default": ""
+  },
+  {
+    "key": "视频参数_动态模糊_连续混合帧数",
+    "type": "string",
+    "group": "动态模糊",
+    "default": ""
+  },
+  {
+    "key": "视频参数_动态模糊_每帧权重",
+    "type": "string",
+    "group": "动态模糊",
+    "default": ""
+  },
+  {
+    "key": "视频参数_动态模糊_输出缩放系数",
+    "type": "string",
+    "group": "动态模糊",
+    "default": ""
+  },
+  {
+    "key": "视频参数_动态模糊_处理颜色平面",
+    "type": "string",
+    "group": "动态模糊",
+    "default": ""
+  },
+  {
+    "key": "视频参数_超分_直接面板",
+    "type": "json",
+    "group": "超分",
+    "default": {}
+  },
+  {
+    "key": "视频参数_超分_滤镜叠加策略组",
+    "type": "json",
+    "group": "超分",
+    "default": []
+  },
+  {
+    "key": "视频参数_降噪_方式",
+    "type": "enum",
+    "group": "降噪",
+    "default": 0,
+    "choices": [
+      {
+        "label": "未选择",
+        "value": 0
+      },
+      {
+        "label": "hqdn3d",
+        "value": 1
+      },
+      {
+        "label": "nlmeans",
+        "value": 2
+      },
+      {
+        "label": "atadenoise",
+        "value": 3
+      },
+      {
+        "label": "bm3d",
+        "value": 4
+      },
+      {
+        "label": "bilateral cuda",
+        "value": 5
+      }
+    ]
+  },
+  {
+    "key": "视频参数_降噪_参数1",
+    "type": "string",
+    "group": "降噪",
+    "default": ""
+  },
+  {
+    "key": "视频参数_降噪_参数2",
+    "type": "string",
+    "group": "降噪",
+    "default": ""
+  },
+  {
+    "key": "视频参数_降噪_参数3",
+    "type": "string",
+    "group": "降噪",
+    "default": ""
+  },
+  {
+    "key": "视频参数_降噪_参数4",
+    "type": "string",
+    "group": "降噪",
+    "default": ""
+  },
+  {
+    "key": "视频参数_锐化_方式",
+    "type": "enum",
+    "group": "锐化",
+    "default": 0,
+    "choices": [
+      {
+        "label": "未选择",
+        "value": 0
+      },
+      {
+        "label": "cas",
+        "value": 1
+      },
+      {
+        "label": "unsharp",
+        "value": 2
+      }
+    ]
+  },
+  {
+    "key": "视频参数_锐化_参数1",
+    "type": "string",
+    "group": "锐化",
+    "default": ""
+  },
+  {
+    "key": "视频参数_锐化_参数2",
+    "type": "string",
+    "group": "锐化",
+    "default": ""
+  },
+  {
+    "key": "视频参数_锐化_参数3",
+    "type": "string",
+    "group": "锐化",
+    "default": ""
+  },
+  {
+    "key": "视频参数_胶片颗粒_方式",
+    "type": "enum",
+    "group": "胶片颗粒",
+    "default": 0,
+    "choices": [
+      {
+        "label": "未选择",
+        "value": 0
+      },
+      {
+        "label": "noise 全平面动态均匀颗粒",
+        "value": 1
+      },
+      {
+        "label": "noise 亮度为主动态颗粒",
+        "value": 2
+      },
+      {
+        "label": "noise 柔和平均颗粒",
+        "value": 3
+      },
+      {
+        "label": "libplacebo 应用片源胶片颗粒元数据",
+        "value": 4
+      }
+    ]
+  },
+  {
+    "key": "视频参数_胶片颗粒_参数1",
+    "type": "string",
+    "group": "胶片颗粒",
+    "default": ""
+  },
+  {
+    "key": "视频参数_胶片颗粒_参数2",
+    "type": "string",
+    "group": "胶片颗粒",
+    "default": ""
+  },
+  {
+    "key": "视频参数_胶片颗粒_参数3",
+    "type": "string",
+    "group": "胶片颗粒",
+    "default": ""
+  },
+  {
+    "key": "视频参数_胶片颗粒_参数4",
+    "type": "string",
+    "group": "胶片颗粒",
+    "default": ""
+  },
+  {
+    "key": "视频参数_平滑断层_方式",
+    "type": "enum",
+    "group": "平滑断层",
+    "default": 0,
+    "choices": [
+      {
+        "label": "未选择",
+        "value": 0
+      },
+      {
+        "label": "deband 标准去色带",
+        "value": 1
+      },
+      {
+        "label": "deband 强力去色带",
+        "value": 2
+      },
+      {
+        "label": "gradfun 快速渐变平滑",
+        "value": 3
+      },
+      {
+        "label": "libplacebo GPU去色带加颗粒",
+        "value": 4
+      }
+    ]
+  },
+  {
+    "key": "视频参数_平滑断层_参数1",
+    "type": "string",
+    "group": "平滑断层",
+    "default": ""
+  },
+  {
+    "key": "视频参数_平滑断层_参数2",
+    "type": "string",
+    "group": "平滑断层",
+    "default": ""
+  },
+  {
+    "key": "视频参数_平滑断层_参数3",
+    "type": "string",
+    "group": "平滑断层",
+    "default": ""
+  },
+  {
+    "key": "视频参数_平滑断层_参数4",
+    "type": "string",
+    "group": "平滑断层",
+    "default": ""
+  },
+  {
+    "key": "视频参数_处理扫描方式",
+    "type": "enum",
+    "group": "处理扫描方式",
+    "default": 0,
+    "choices": [
+      {
+        "label": "未选择",
+        "value": 0
+      },
+      {
+        "label": "yadif 单帧输入 自动场序 空间检查",
+        "value": 1
+      },
+      {
+        "label": "yadif 单帧输入 顶场优先 空间检查",
+        "value": 2
+      },
+      {
+        "label": "yadif 单帧输入 底场优先 空间检查",
+        "value": 3
+      },
+      {
+        "label": "tinterlace 顶场优先",
+        "value": 4
+      },
+      {
+        "label": "tinterlace 底场优先",
+        "value": 5
+      },
+      {
+        "label": "NTSC 标准IVTC 胶片32Pulldown转逐行",
+        "value": 6
+      },
+      {
+        "label": "NTSC 纯隔行 非胶片转逐行",
+        "value": 7
+      },
+      {
+        "label": "NTSC 自动检测Pulldown至25fps",
+        "value": 8
+      },
+      {
+        "label": "PAL 标准反交错",
+        "value": 9
+      },
+      {
+        "label": "PAL 标准反交错 双倍帧率",
+        "value": 10
+      },
+      {
+        "label": "PAL 高质量反交错",
+        "value": 11
+      },
+      {
+        "label": "PAL 高质量反交错 双倍帧率",
+        "value": 12
+      },
+      {
+        "label": "yadif cuda 自动场序",
+        "value": 13
+      },
+      {
+        "label": "bwdif cuda 自动场序",
+        "value": 14
+      }
+    ]
+  },
+  {
+    "key": "视频参数_画面翻转_角度翻转",
+    "type": "enum",
+    "group": "画面翻转",
+    "default": 0,
+    "choices": [
+      {
+        "label": "未选择",
+        "value": 0
+      },
+      {
+        "label": "顺时针旋转90度",
+        "value": 1
+      },
+      {
+        "label": "顺时针旋转180度",
+        "value": 2
+      },
+      {
+        "label": "顺时针旋转270度",
+        "value": 3
+      },
+      {
+        "label": "逆时针旋转90度",
+        "value": 4
+      },
+      {
+        "label": "逆时针旋转180度",
+        "value": 5
+      },
+      {
+        "label": "逆时针旋转270度",
+        "value": 6
+      }
+    ]
+  },
+  {
+    "key": "视频参数_画面翻转_镜像翻转",
+    "type": "enum",
+    "group": "画面翻转",
+    "default": 0,
+    "choices": [
+      {
+        "label": "未选择",
+        "value": 0
+      },
+      {
+        "label": "水平镜像",
+        "value": 1
+      },
+      {
+        "label": "垂直镜像",
+        "value": 2
+      }
+    ]
+  },
+  {
+    "key": "视频参数_烧录字幕_滤镜选择",
+    "type": "enum",
+    "group": "烧录字幕",
+    "default": 0,
+    "choices": [
+      {
+        "label": "未选择",
+        "value": 0
+      },
+      {
+        "label": "subtitles",
+        "value": 1
+      },
+      {
+        "label": "ass",
+        "value": 2
+      }
+    ]
+  },
+  {
+    "key": "视频参数_烧录字幕_字幕来源是外部文件",
+    "type": "enum",
+    "group": "烧录字幕",
+    "default": 0,
+    "choices": [
+      {
+        "label": "未选择",
+        "value": 0
+      },
+      {
+        "label": "外部字幕文件",
+        "value": 1
+      },
+      {
+        "label": "内嵌的流",
+        "value": 2
+      }
+    ]
+  },
+  {
+    "key": "视频参数_烧录字幕_字幕格式优先级",
+    "type": "json",
+    "group": "烧录字幕",
+    "default": []
+  },
+  {
+    "key": "视频参数_烧录字幕_外部字幕文件名",
+    "type": "string",
+    "group": "烧录字幕",
+    "default": ""
+  },
+  {
+    "key": "视频参数_烧录字幕_外部字幕文件夹位置",
+    "type": "string",
+    "group": "烧录字幕",
+    "default": ""
+  },
+  {
+    "key": "视频参数_烧录字幕_指定内嵌的流",
+    "type": "string",
+    "group": "烧录字幕",
+    "default": ""
+  },
+  {
+    "key": "视频参数_烧录字幕_基本样式_名称",
+    "type": "string",
+    "group": "烧录字幕",
+    "default": ""
+  },
+  {
+    "key": "视频参数_烧录字幕_基本样式_大小",
+    "type": "number",
+    "group": "烧录字幕",
+    "default": 0.0
+  },
+  {
+    "key": "视频参数_烧录字幕_基本样式_粗体",
+    "type": "bool",
+    "group": "烧录字幕",
+    "default": false
+  },
+  {
+    "key": "视频参数_烧录字幕_基本样式_斜体",
+    "type": "bool",
+    "group": "烧录字幕",
+    "default": false
+  },
+  {
+    "key": "视频参数_烧录字幕_基本样式_下划线",
+    "type": "bool",
+    "group": "烧录字幕",
+    "default": false
+  },
+  {
+    "key": "视频参数_烧录字幕_基本样式_删除线",
+    "type": "bool",
+    "group": "烧录字幕",
+    "default": false
+  },
+  {
+    "key": "视频参数_烧录字幕_边框样式",
+    "type": "enum",
+    "group": "烧录字幕",
+    "default": 0,
+    "choices": [
+      {
+        "label": "未选择",
+        "value": 0
+      },
+      {
+        "label": "边框 阴影",
+        "value": 1
+      },
+      {
+        "label": "背景框",
+        "value": 2
+      }
+    ]
+  },
+  {
+    "key": "视频参数_烧录字幕_描边宽度",
+    "type": "string",
+    "group": "烧录字幕",
+    "default": ""
+  },
+  {
+    "key": "视频参数_烧录字幕_阴影距离",
+    "type": "string",
+    "group": "烧录字幕",
+    "default": ""
+  },
+  {
+    "key": "视频参数_烧录字幕_主要颜色",
+    "type": "json",
+    "group": "烧录字幕",
+    "default": {}
+  },
+  {
+    "key": "视频参数_烧录字幕_次要颜色",
+    "type": "json",
+    "group": "烧录字幕",
+    "default": {}
+  },
+  {
+    "key": "视频参数_烧录字幕_描边颜色",
+    "type": "json",
+    "group": "烧录字幕",
+    "default": {}
+  },
+  {
+    "key": "视频参数_烧录字幕_背景颜色",
+    "type": "json",
+    "group": "烧录字幕",
+    "default": {}
+  },
+  {
+    "key": "视频参数_烧录字幕_字体文件夹",
+    "type": "string",
+    "group": "烧录字幕",
+    "default": ""
+  },
+  {
+    "key": "视频参数_烧录字幕_对齐方位",
+    "type": "enum",
+    "group": "烧录字幕",
+    "default": 0,
+    "choices": [
+      {
+        "label": "未选择",
+        "value": 0
+      },
+      {
+        "label": "左下角",
+        "value": 1
+      },
+      {
+        "label": "底部居中",
+        "value": 2
+      },
+      {
+        "label": "右下角",
+        "value": 3
+      },
+      {
+        "label": "左居中",
+        "value": 4
+      },
+      {
+        "label": "正中",
+        "value": 5
+      },
+      {
+        "label": "右居中",
+        "value": 6
+      },
+      {
+        "label": "左上角",
+        "value": 7
+      },
+      {
+        "label": "顶部居中",
+        "value": 8
+      },
+      {
+        "label": "右上角",
+        "value": 9
+      }
+    ]
+  },
+  {
+    "key": "视频参数_烧录字幕_垂直边距",
+    "type": "string",
+    "group": "烧录字幕",
+    "default": ""
+  },
+  {
+    "key": "视频参数_烧录字幕_左边距",
+    "type": "string",
+    "group": "烧录字幕",
+    "default": ""
+  },
+  {
+    "key": "视频参数_烧录字幕_右边距",
+    "type": "string",
+    "group": "烧录字幕",
+    "default": ""
+  },
+  {
+    "key": "视频参数_烧录字幕_字距",
+    "type": "string",
+    "group": "烧录字幕",
+    "default": ""
+  },
+  {
+    "key": "视频参数_烧录字幕_行距",
+    "type": "string",
+    "group": "烧录字幕",
+    "default": ""
+  },
+  {
+    "key": "视频参数_烧录字幕_补充样式",
+    "type": "string",
+    "group": "烧录字幕",
+    "default": ""
+  },
+  {
+    "key": "视频参数_烧录字幕_自己写滤镜取代所有设置",
+    "type": "string",
+    "group": "烧录字幕",
+    "default": ""
+  },
+  {
+    "key": "视频参数_比特率_控制方式",
+    "type": "enum",
+    "group": "比特率",
+    "default": 0,
+    "choices": [
+      {
+        "label": "未选择",
+        "value": 0
+      },
+      {
+        "label": "CRF",
+        "value": 1
+      },
+      {
+        "label": "VBR",
+        "value": 2
+      },
+      {
+        "label": "CQP",
+        "value": 4
+      },
+      {
+        "label": "CBR",
+        "value": 5
+      },
+      {
+        "label": "TPE",
+        "value": 6
+      }
+    ]
+  },
+  {
+    "key": "视频参数_质量控制_参数名",
+    "type": "string",
+    "group": "质量控制",
+    "default": ""
+  },
+  {
+    "key": "视频参数_质量控制_值",
+    "type": "string",
+    "group": "质量控制",
+    "default": ""
+  },
+  {
+    "key": "视频参数_比特率_基础",
+    "type": "string",
+    "group": "比特率",
+    "default": ""
+  },
+  {
+    "key": "视频参数_比特率_最低值",
+    "type": "string",
+    "group": "比特率",
+    "default": ""
+  },
+  {
+    "key": "视频参数_比特率_最高值",
+    "type": "string",
+    "group": "比特率",
+    "default": ""
+  },
+  {
+    "key": "视频参数_比特率_缓冲区",
+    "type": "string",
+    "group": "比特率",
+    "default": ""
+  },
+  {
+    "key": "视频参数_质量控制_进阶参数集",
+    "type": "string",
+    "group": "质量控制",
+    "default": ""
+  },
+  {
+    "key": "视频参数_色彩管理_像素格式",
+    "type": "string",
+    "group": "色彩管理",
+    "default": ""
+  },
+  {
+    "key": "视频参数_色彩管理_像素格式预先转换",
+    "type": "string",
+    "group": "色彩管理",
+    "default": ""
+  },
+  {
+    "key": "视频参数_色彩管理_滤镜选择",
+    "type": "string",
+    "group": "色彩管理",
+    "default": ""
+  },
+  {
+    "key": "视频参数_色彩管理_矩阵系数",
+    "type": "string",
+    "group": "色彩管理",
+    "default": ""
+  },
+  {
+    "key": "视频参数_色彩管理_色域",
+    "type": "string",
+    "group": "色彩管理",
+    "default": ""
+  },
+  {
+    "key": "视频参数_色彩管理_传输特性",
+    "type": "string",
+    "group": "色彩管理",
+    "default": ""
+  },
+  {
+    "key": "视频参数_色彩管理_范围",
+    "type": "string",
+    "group": "色彩管理",
+    "default": ""
+  },
+  {
+    "key": "视频参数_色彩管理_色调映射算法",
+    "type": "string",
+    "group": "色彩管理",
+    "default": ""
+  },
+  {
+    "key": "视频参数_色彩管理_处理方式",
+    "type": "string",
+    "group": "色彩管理",
+    "default": ""
+  },
+  {
+    "key": "视频参数_色彩管理_启用调整亮度",
+    "type": "bool",
+    "group": "色彩管理",
+    "default": false
+  },
+  {
+    "key": "视频参数_色彩管理_亮度",
+    "type": "string",
+    "group": "色彩管理",
+    "default": ""
+  },
+  {
+    "key": "视频参数_色彩管理_启用调整对比度",
+    "type": "bool",
+    "group": "色彩管理",
+    "default": false
+  },
+  {
+    "key": "视频参数_色彩管理_对比度",
+    "type": "string",
+    "group": "色彩管理",
+    "default": ""
+  },
+  {
+    "key": "视频参数_色彩管理_启用调整饱和度",
+    "type": "bool",
+    "group": "色彩管理",
+    "default": false
+  },
+  {
+    "key": "视频参数_色彩管理_饱和度",
+    "type": "string",
+    "group": "色彩管理",
+    "default": ""
+  },
+  {
+    "key": "视频参数_色彩管理_启用调整伽马",
+    "type": "bool",
+    "group": "色彩管理",
+    "default": false
+  },
+  {
+    "key": "视频参数_色彩管理_伽马",
+    "type": "string",
+    "group": "色彩管理",
+    "default": ""
+  },
+  {
+    "key": "视频参数_视频帧服务器_使用AviSynth",
+    "type": "bool",
+    "group": "视频帧服务器",
+    "default": false
+  },
+  {
+    "key": "视频参数_视频帧服务器_avs脚本文件",
+    "type": "string",
+    "group": "视频帧服务器",
+    "default": ""
+  },
+  {
+    "key": "视频参数_视频帧服务器_使用VapourSynth",
+    "type": "bool",
+    "group": "视频帧服务器",
+    "default": false
+  },
+  {
+    "key": "视频参数_视频帧服务器_vpy脚本文件",
+    "type": "string",
+    "group": "视频帧服务器",
+    "default": ""
+  },
+  {
+    "key": "音频参数_编码器_代号",
+    "type": "string",
+    "group": "音频参数",
+    "default": ""
+  },
+  {
+    "key": "音频参数_比特率",
+    "type": "string",
+    "group": "音频参数",
+    "default": ""
+  },
+  {
+    "key": "音频参数_质量参数名",
+    "type": "string",
+    "group": "音频参数",
+    "default": ""
+  },
+  {
+    "key": "音频参数_质量值",
+    "type": "string",
+    "group": "音频参数",
+    "default": ""
+  },
+  {
+    "key": "音频参数_质量参数名2",
+    "type": "string",
+    "group": "音频参数",
+    "default": ""
+  },
+  {
+    "key": "音频参数_质量值2",
+    "type": "string",
+    "group": "音频参数",
+    "default": ""
+  },
+  {
+    "key": "音频参数_声道数",
+    "type": "string",
+    "group": "音频参数",
+    "default": ""
+  },
+  {
+    "key": "音频参数_位深度",
+    "type": "string",
+    "group": "音频参数",
+    "default": ""
+  },
+  {
+    "key": "音频参数_采样率",
+    "type": "string",
+    "group": "音频参数",
+    "default": ""
+  },
+  {
+    "key": "音频参数_响度标准化_启用调整目标响度",
+    "type": "bool",
+    "group": "音频参数",
+    "default": false
+  },
+  {
+    "key": "音频参数_响度标准化_目标响度",
+    "type": "string",
+    "group": "音频参数",
+    "default": ""
+  },
+  {
+    "key": "音频参数_响度标准化_启用调整动态范围",
+    "type": "bool",
+    "group": "音频参数",
+    "default": false
+  },
+  {
+    "key": "音频参数_响度标准化_动态范围",
+    "type": "string",
+    "group": "音频参数",
+    "default": ""
+  },
+  {
+    "key": "音频参数_响度标准化_启用调整峰值电平",
+    "type": "bool",
+    "group": "音频参数",
+    "default": false
+  },
+  {
+    "key": "音频参数_响度标准化_峰值电平",
+    "type": "string",
+    "group": "音频参数",
+    "default": ""
+  },
+  {
+    "key": "滤镜排序系统",
+    "type": "json",
+    "group": "输出与预设",
+    "default": []
+  },
+  {
+    "key": "自定义参数_视频滤镜",
+    "type": "string",
+    "group": "自定义参数",
+    "default": ""
+  },
+  {
+    "key": "自定义参数_音频滤镜",
+    "type": "string",
+    "group": "自定义参数",
+    "default": ""
+  },
+  {
+    "key": "自定义参数_视频参数",
+    "type": "string",
+    "group": "自定义参数",
+    "default": ""
+  },
+  {
+    "key": "自定义参数_音频参数",
+    "type": "string",
+    "group": "自定义参数",
+    "default": ""
+  },
+  {
+    "key": "自定义参数_开头参数",
+    "type": "string",
+    "group": "自定义参数",
+    "default": ""
+  },
+  {
+    "key": "自定义参数_之前参数",
+    "type": "string",
+    "group": "自定义参数",
+    "default": ""
+  },
+  {
+    "key": "自定义参数_之后参数",
+    "type": "string",
+    "group": "自定义参数",
+    "default": ""
+  },
+  {
+    "key": "自定义参数_最后参数",
+    "type": "string",
+    "group": "自定义参数",
+    "default": ""
+  },
+  {
+    "key": "自定义参数_完全自己写",
+    "type": "string",
+    "group": "自定义参数",
+    "default": ""
+  },
+  {
+    "key": "剪辑区间_方法",
+    "type": "enum",
+    "group": "剪辑区间",
+    "default": 0,
+    "choices": [
+      {
+        "label": "未知",
+        "value": 0
+      },
+      {
+        "label": "粗剪",
+        "value": 1
+      },
+      {
+        "label": "精剪从头解码",
+        "value": 2
+      },
+      {
+        "label": "精剪空降解码",
+        "value": 3
+      },
+      {
+        "label": "Trim滤镜",
+        "value": 4
+      },
+      {
+        "label": "掐头去尾",
+        "value": 5
+      },
+      {
+        "label": "剔除中间",
+        "value": 6
+      }
+    ]
+  },
+  {
+    "key": "剪辑区间_入点",
+    "type": "string",
+    "group": "剪辑区间",
+    "default": ""
+  },
+  {
+    "key": "剪辑区间_出点",
+    "type": "string",
+    "group": "剪辑区间",
+    "default": ""
+  },
+  {
+    "key": "剪辑区间_向前解码多久秒",
+    "type": "string",
+    "group": "剪辑区间",
+    "default": ""
+  },
+  {
+    "key": "流控制_启用保留其他视频流",
+    "type": "bool",
+    "group": "流控制",
+    "default": false
+  },
+  {
+    "key": "流控制_将视频参数应用于指定流",
+    "type": "json",
+    "group": "流控制",
+    "default": []
+  },
+  {
+    "key": "流控制_启用保留其他音频流",
+    "type": "bool",
+    "group": "流控制",
+    "default": false
+  },
+  {
+    "key": "流控制_将音频参数应用于指定流",
+    "type": "json",
+    "group": "流控制",
+    "default": []
+  },
+  {
+    "key": "流控制_将字幕参数应用于指定流",
+    "type": "json",
+    "group": "流控制",
+    "default": []
+  },
+  {
+    "key": "流控制_如何操作指定的字幕",
+    "type": "enum",
+    "group": "流控制",
+    "default": 0,
+    "choices": [
+      {
+        "label": "未选择",
+        "value": 0
+      },
+      {
+        "label": "复制流",
+        "value": 1
+      },
+      {
+        "label": "转为 mov text",
+        "value": 2
+      },
+      {
+        "label": "转为 srt",
+        "value": 3
+      },
+      {
+        "label": "转为 ass",
+        "value": 4
+      },
+      {
+        "label": "转为 ssa",
+        "value": 5
+      }
+    ]
+  },
+  {
+    "key": "流控制_启用保留其他字幕流",
+    "type": "bool",
+    "group": "流控制",
+    "default": false
+  },
+  {
+    "key": "流控制_自动混流SRT",
+    "type": "bool",
+    "group": "流控制",
+    "default": false
+  },
+  {
+    "key": "流控制_自动混流ASS",
+    "type": "bool",
+    "group": "流控制",
+    "default": false
+  },
+  {
+    "key": "流控制_自动混流SSA",
+    "type": "bool",
+    "group": "流控制",
+    "default": false
+  },
+  {
+    "key": "流控制_自动混流的字幕转为MOVTEXT",
+    "type": "bool",
+    "group": "流控制",
+    "default": false
+  },
+  {
+    "key": "流控制_元数据选项",
+    "type": "enum",
+    "group": "流控制",
+    "default": 0,
+    "choices": [
+      {
+        "label": "未选择",
+        "value": 0
+      },
+      {
+        "label": "保留元数据",
+        "value": 1
+      },
+      {
+        "label": "清除元数据",
+        "value": 2
+      },
+      {
+        "label": "保留更多元数据",
+        "value": 3
+      }
+    ]
+  },
+  {
+    "key": "流控制_章节选项",
+    "type": "enum",
+    "group": "流控制",
+    "default": 0,
+    "choices": [
+      {
+        "label": "未选择",
+        "value": 0
+      },
+      {
+        "label": "保留章节",
+        "value": 1
+      },
+      {
+        "label": "清除章节",
+        "value": 2
+      }
+    ]
+  },
+  {
+    "key": "流控制_附件选项",
+    "type": "enum",
+    "group": "流控制",
+    "default": 0,
+    "choices": [
+      {
+        "label": "未选择",
+        "value": 0
+      },
+      {
+        "label": "保留附件",
+        "value": 1
+      },
+      {
+        "label": "清除附件",
+        "value": 2
+      }
+    ]
+  },
+  {
+    "key": "元数据_要写入的信息",
+    "type": "json",
+    "group": "元数据",
+    "default": []
+  },
+  {
+    "key": "章节_来源",
+    "type": "enum",
+    "group": "章节",
+    "default": 0,
+    "choices": [
+      {
+        "label": "未选择",
+        "value": 0
+      },
+      {
+        "label": "文本文档",
+        "value": 1
+      },
+      {
+        "label": "媒体文件",
+        "value": 2
+      }
+    ]
+  },
+  {
+    "key": "章节_文件路径",
+    "type": "string",
+    "group": "章节",
+    "default": ""
+  },
+  {
+    "key": "附件_要写入的附件",
+    "type": "json",
+    "group": "附件",
+    "default": []
+  },
+  {
+    "key": "计算机名称",
+    "type": "string",
+    "group": "输出与预设",
+    "default": ""
+  },
+  {
+    "key": "输出位置",
+    "type": "string",
+    "group": "输出与预设",
+    "default": ""
+  },
+  {
+    "key": "输出位置_保留子文件夹结构起始点",
+    "type": "string",
+    "group": "输出位置",
+    "default": ""
+  }
+]

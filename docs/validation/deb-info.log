@@ -1,0 +1,15 @@
+ new Debian package, version 2.0.
+ size 245212 bytes: control archive=731 bytes.
+     516 bytes,    12 lines      control
+     563 bytes,     7 lines      md5sums
+ Architecture: amd64
+ Depends: ffmpeg, libqt6widgets6 (>= 6.4), qt6-wayland, qt6-qpa-plugins, libc6 (>= 2.34), libgcc-s1 (>= 3.0), libqt6core6 (>= 6.4.0), libqt6gui6 (>= 6.4.0), libqt6widgets6 (>= 6.1.2), libstdc++6 (>= 5.2)
+ Description: Native C++ FFmpeg frontend with Wayland and X11 support
+ Homepage: https://github.com/Lake1059/FFmpegFreeUI
+ Maintainer: FFmpegFreeUI Native contributors
+ Package: ffmpegfreeui-native
+ Priority: optional
+ Recommends: fonts-noto-cjk
+ Section: video
+ Version: 0.1.0-1
+ Installed-Size: 591

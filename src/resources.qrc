@@ -1,0 +1,7 @@
+<RCC><qresource prefix="/fui">
+  <file alias="schema.json">../data/schema.json</file>
+  <file alias="defaults.json">../data/defaults.json</file>
+  <file alias="builtins.json">../data/builtins.json</file>
+  <file alias="audio-codecs.json">../data/audio-codecs.json</file>
+  <file alias="icon.png">../data/icon.png</file>
+</qresource></RCC>

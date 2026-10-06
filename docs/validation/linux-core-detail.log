@@ -1,0 +1,19 @@
+Start testing: Oct 06 16:35 UTC
+----------------------------------------------------------
+1/1 Testing: native_core
+1/1 Test: native_core
+Command: "/home/builder/build/fui_tests"
+Directory: /home/builder/build
+"native_core" start time: Oct 06 16:35 UTC
+Output:
+----------------------------------------------------------
+PASS 44 checks, real FFmpeg transcode, two-pass, pause/resume/cancel, preset and queue recovery
+<end of output>
+Test time =   6.04 sec
+----------------------------------------------------------
+Test Passed.
+"native_core" end time: Oct 06 16:35 UTC
+"native_core" time elapsed: 00:00:06
+----------------------------------------------------------
+
+End testing: Oct 06 16:35 UTC

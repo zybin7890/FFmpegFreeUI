@@ -1,0 +1,8 @@
+Internal ctest changing into directory: /home/builder/build
+Test project /home/builder/build
+    Start 1: native_core
+1/1 Test #1: native_core ......................   Passed    6.04 sec
+
+100% tests passed, 0 tests failed out of 1
+
+Total Test time (real) =   6.09 sec

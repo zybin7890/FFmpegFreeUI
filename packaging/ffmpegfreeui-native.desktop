@@ -1,0 +1,13 @@
+[Desktop Entry]
+Type=Application
+Name=FFmpegFreeUI Native
+Name[zh_CN]=FFmpegFreeUI 原生版
+Comment=Batch transcode media using FFmpeg
+Comment[zh_CN]=FFmpeg 批量转码与参数管理
+Exec=ffmpegfreeui-launch %F
+TryExec=ffmpegfreeui
+Icon=ffmpegfreeui-native
+Terminal=false
+Categories=AudioVideo;Video;
+MimeType=video/mp4;video/x-matroska;video/webm;audio/mpeg;audio/flac;
+StartupNotify=true
